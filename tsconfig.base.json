@@ -14,8 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
     "paths": {
-      "@nutrition/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@nutrition/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@nutrition/core-data": ["libs/core-data/src/index.ts"],
+      "@nutrition/material": ["libs/material/src/index.ts"],
+      "@nutrition/ui-login": ["libs/ui-login/src/index.ts"],
+      "@nutrition/core-state": ["libs/core-state/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

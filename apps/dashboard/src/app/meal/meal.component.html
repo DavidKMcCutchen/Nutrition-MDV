@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="col-50" layout="row" layout-align="center center">
+    <nutrition-meal-list
+      [meals]="allMeals$ | async"
+      (selected)="selectMeal($event)"
+      (deleted)="deleteMeal($event)"
+    ></nutrition-meal-list>
+  </div>
+  <div class="col-50" layout="row" layout-align="center center">
+    <nutrition-meal-details
+      [meal]="selectedMeal$ | async"
+      (saved)="saveMeal($event)"
+      (cancelled)="cancel()"
+      [form]="form"
+    ></nutrition-meal-details>
+  </div>
+</div>
